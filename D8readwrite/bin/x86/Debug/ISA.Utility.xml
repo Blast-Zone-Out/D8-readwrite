@@ -1,0 +1,481 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+ISA.Utility
+</name>
+</assembly>
+<members>
+<member name="M:ISA.Utility.Data.Validator.IsHexDataValid(System.String)">
+	<summary>
+ Checks if a string contains only valid hex characters and spaces.
+ </summary>
+	<param name="input">The input string to be checked.</param>
+	<returns>True if the string contains only valid hex characters and spaces, False otherwise.</returns>
+	<remarks>
+ The regular expression pattern is ^[0-9A-Fa-f\s]+$:
+ - ^ asserts the start of the string.
+ - [0-9A-Fa-f] matches any hex character (0-9, A-F, a-f).
+ - \s matches any whitespace character.
+ - + allows for one or more occurrences of the characters defined in the brackets.
+ - $ asserts the end of the string.
+ </remarks>
+</member><member name="M:ISA.Utility.Data.Validator.ContainsOnlyNumbersAndLetters(System.String)">
+	<summary>
+ Checks if a string contains only numbers and letters.
+ </summary>
+	<param name="inputString">The input string to be checked.</param>
+	<returns>True if the input string contains only numbers and letters; otherwise, False.</returns>
+	<remarks>
+ This function uses a regular expression pattern to match strings containing only uppercase letters, lowercase letters, and digits.
+ The regular expression pattern is as follows:
+ ^         Start of string
+ [a-zA-Z0-9]+   Match one or more occurrences of uppercase letters, lowercase letters, or digits
+ $         End of string
+
+ Explanation of the regular expression pattern:
+ - ^ : Asserts the start of a line
+ - [a-zA-Z0-9]+ : Matches one or more occurrences of uppercase letters, lowercase letters, or digits
+ - $ : Asserts the end of a line
+
+ Example usage:
+ Dim input As String = "abc123"
+ Dim result As Boolean = ContainsOnlyNumbersAndLetters(input)
+ Console.WriteLine(result) ' This will output True
+ </remarks>
+</member><member name="M:ISA.Utility.Data.Validator.IsComPortValid(System.String)">
+	<summary>
+ Checks if a given string is a valid COM port.
+ </summary>
+	<param name="portName">The COM port name to validate.</param>
+	<returns>True if the port name is valid, otherwise false.</returns>
+	<remarks>
+ The regular expression pattern used for validation is "^COM\d{1,2}$".
+ - ^: Asserts the start of the string.
+ - COM: Matches the literal characters "COM".
+ - \d{1,2}: Matches one or two digits (0-9).
+ - $: Asserts the end of the string.
+ </remarks>
+</member><member name="M:ISA.Utility.Device.Bill.Dispenser.Manager.ManagerClass.Instance">
+	<summary>
+ Access the instance of Manager Class.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:ISA.Utility.Device.CommonLib.CashCodeSerialConnector.CashCodeMessage.CalculateCheckDigit(System.Byte[])">
+	<summary>
+ Compute the terminator byte for the command
+ </summary>
+	<param name="data"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:ISA.Utility.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:ISA.Utility.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:ISA.Utility.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="T:ISA.Utility.Device.Bill.Acceptor.Manager.Config">
+	<summary>
+ Configuration Structure
+ </summary>
+	<remarks></remarks>
+</member><member name="M:ISA.Utility.Device.CommonLib.CashCodeSerialConnector.Commands.CoinDispenser.DispenseCoin(System.Byte,System.Byte,System.Byte[])">
+	<summary>
+ Command to dispense coins
+ </summary>
+	<param name="amount"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:ISA.Utility.Data.IniFileIO.FileName">
+	<summary>
+ Read-only filename property
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:ISA.Utility.Data.IniFileIO.#ctor(System.String)">
+	<summary>
+ Constructor, accepting a filename
+ </summary>
+	<param name="Filename"></param>
+	<remarks></remarks>
+</member><member name="M:ISA.Utility.Data.IniFileIO.GetString(System.String,System.String,System.String)">
+	<summary>
+ Returns a string from your INI file.
+ </summary>
+</member><member name="M:ISA.Utility.Data.IniFileIO.GetInteger(System.String,System.String,System.Int32)">
+	<summary>
+ Returns an integer from your INI file
+ </summary>
+</member><member name="M:ISA.Utility.Data.IniFileIO.GetBoolean(System.String,System.String,System.Boolean)">
+	<summary>
+ Returns a boolean from your INI file.
+ </summary>
+</member><member name="M:ISA.Utility.Data.IniFileIO.WriteString(System.String,System.String,System.String)">
+	<summary>
+ Writes a string to your INI file.
+ </summary>
+</member><member name="M:ISA.Utility.Data.IniFileIO.WriteInteger(System.String,System.String,System.Int32)">
+	<summary>
+ Writes an integer to your INI file.
+ </summary>
+</member><member name="M:ISA.Utility.Data.IniFileIO.WriteBoolean(System.String,System.String,System.Boolean)">
+	<summary>
+ Writes a boolean to your INI file.
+ </summary>
+</member><member name="T:ISA.Utility.Data.IniFileIO">
+	<summary>
+ Write to a config file
+ </summary>
+	<remarks></remarks>
+</member><member name="T:ISA.Utility.Device.Coin.Dispenser.Manager.CoreFunction.ICoinDispenser">
+	<summary>
+ Base class for coin acceptor.
+ </summary>
+	<remarks>
+ DO NOT MODIFY!
+ Use implements whenever new device is added
+ </remarks>
+</member><member name="M:ISA.Utility.Common.Conversion.Card.CardCodeToInvertedHexString(System.String)">
+	<summary>
+ Convert card gathered into HEX value then invert each pair value. See remarks
+ </summary>
+	<param name="rawCardCode"></param>
+	<returns></returns>
+	<remarks>
+ Example Cardcode: 883674607
+ Hex conversion: 34ABCDEF
+ Paired values: 34 AB CD EF
+ Inverted values: EF CD AB 34
+ Return value: EFCDAB34
+ </remarks>
+</member><member name="M:ISA.Utility.Common.Conversion.Card.HexStringToString(System.String)">
+	<summary>
+ Convert hex(Pair) to string using ASCII Representation
+ </summary>
+	<param name="HexString"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:ISA.Utility.Common.Conversion.Card.StringToHexString(System.String)">
+	<summary>
+ Convert string to HEX using ASCII Representation
+ </summary>
+	<param name="inputString"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:ISA.Utility.Common.Conversion.Card.ByteArrayToHexString(System.Byte[])">
+	<summary>
+ Convert byte array into hexstring. Each data is separated by space.
+ </summary>
+	<param name="byteData"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:ISA.Utility.Common.Conversion.Card.HexStringToByteArray(System.String)">
+	<summary>
+ Converts a hex string to a byte array.
+ </summary>
+	<param name="hexString">The input hex string.</param>
+	<returns> byte array.</returns>
+	<remarks>
+ The hex string is assumed to be in pairs.
+ </remarks>
+</member><member name="M:ISA.Utility.Device.Printer.Manager.ManagerClass.Instance">
+	<summary>
+ Access the instance of Manager Class.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:ISA.Utility.Logger.Level">
+	<summary>
+ Represents the log levels.
+ </summary>
+</member><member name="T:ISA.Utility.Logger.Device">
+	<summary>
+ Represents the devices for logging.
+ </summary>
+</member><member name="M:ISA.Utility.Logger.Log.Write(System.String,ISA.Utility.Logger.Level,System.Exception,ISA.Utility.Logger.Device)">
+	<summary>
+ Write a full log along with an exception and a device.
+ </summary>
+	<param name="message">The log message.</param>
+	<param name="level">The log level (DEBUG, INFO, WARNING, ERROR, CRITICAL).</param>
+	<param name="ex">The exception to log (can be null).</param>
+	<param name="Device">The device from which the log originated (default is None).</param>
+	<remarks>Main Logger</remarks>
+</member><member name="M:ISA.Utility.Logger.Log.Write(System.String,ISA.Utility.Logger.Level,System.Exception)">
+	<summary>
+ Log an exception.
+ </summary>
+	<param name="message">The log message.</param>
+	<param name="level">The log level (DEBUG, INFO, WARNING, ERROR, CRITICAL).</param>
+	<param name="ex">The exception to log.</param>
+	<remarks></remarks>
+</member><member name="M:ISA.Utility.Logger.Log.Write(System.String,ISA.Utility.Logger.Level,ISA.Utility.Logger.Device)">
+	<summary>
+ Log a message from a device.
+ </summary>
+	<param name="message">The log message.</param>
+	<param name="level">The log level (DEBUG, INFO, WARNING, ERROR, CRITICAL).</param>
+	<param name="Device">The device from which the log originated.</param>
+	<remarks></remarks>
+</member><member name="M:ISA.Utility.Logger.Log.Write(System.String,ISA.Utility.Logger.Level)">
+	<summary>
+ Log a message.
+ </summary>
+	<param name="message">The log message.</param>
+	<param name="level">The log level (DEBUG, INFO, WARNING, ERROR, CRITICAL).</param>
+	<remarks></remarks>
+</member><member name="M:ISA.Utility.Logger.Log.WriteToFile(System.String,System.String)">
+	<summary>
+ Write log to file.
+ </summary>
+	<param name="message">The log message to write to the file.</param>
+	<param name="fileLocation">The location of the log file.</param>
+	<remarks></remarks>
+</member><member name="M:ISA.Utility.Logger.Log.CreateFolderAndFile(System.String)">
+	<summary>
+ Check folder location and file if exist, create if not.
+ </summary>
+	<param name="filePath">The full path to the file.</param>
+	<returns>True if the folder and file were created successfully or already exist; otherwise, false.</returns>
+	<remarks></remarks>
+</member><member name="T:ISA.Utility.Logger.Log">
+	<summary>
+ Provides logging functionality with support for different log levels, devices, and file separation.
+ </summary>
+</member><member name="M:ISA.Utility.Common.Conversion.Time.Now">
+	<summary>
+ Get Date.Now without rounding milliseconds to seconds
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:ISA.Utility.Common.Conversion.Time.DateToUnixTime(System.DateTime)">
+	<summary>
+ Converts a (Local)DateTime object to a Unix timestamp 
+ </summary>
+	<param name="dateTime"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:ISA.Utility.Common.Conversion.Time.UnixTimeToLocalDate(System.Int64)">
+	<summary>
+ Converts a Unix timestamp to a (Local)DateTime object
+ </summary>
+	<param name="unixTimestamp"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:ISA.Utility.Device.Coin.Acceptor.Manager.CoreFunction.ICoinAcceptor">
+	<summary>
+ Base class for coin acceptor.
+ </summary>
+	<remarks>
+ DO NOT MODIFY!
+ Use implements whenever new device is added
+ </remarks>
+</member><member name="M:ISA.Utility.Device.Coin.Dispenser.Manager.ManagerClass.Instance">
+	<summary>
+ Access the instance of Manager Class.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:ISA.Utility.Device.Printer.Manager.CoreFunction.IPrinter">
+	<summary>
+ Base class for bill acceptor.
+ </summary>
+	<remarks>
+ DO NOT MODIFY!
+ Use implements whenever new device is added
+ </remarks>
+</member><member name="M:ISA.Utility.Device.Coin.Acceptor.Manager.ManagerClass.Instance">
+	<summary>
+ Access the instance of Manager Class.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="F:ISA.Utility.Device.Printer.Device.Masung.SDK.PrinterStatus.OK">
+	<summary>Printer is ready, Power is correct and paper is enough</summary>
+</member><member name="F:ISA.Utility.Device.Printer.Device.Masung.SDK.PrinterStatus.Offline">
+	<summary>Printer is offline or no power</summary>
+</member><member name="F:ISA.Utility.Device.Printer.Device.Masung.SDK.PrinterStatus.LibErr">
+	<summary>Printer called unmatched library</summary>
+</member><member name="F:ISA.Utility.Device.Printer.Device.Masung.SDK.PrinterStatus.HeadOpen">
+	<summary>Printer head is opened</summary>
+</member><member name="F:ISA.Utility.Device.Printer.Device.Masung.SDK.PrinterStatus.CutterErr">
+	<summary>Cutter is not reset</summary>
+</member><member name="F:ISA.Utility.Device.Printer.Device.Masung.SDK.PrinterStatus.HeadTempErr">
+	<summary>Printer head temp is abnormal(overheating or too low)</summary>
+</member><member name="F:ISA.Utility.Device.Printer.Device.Masung.SDK.PrinterStatus.NoBlackMark">
+	<summary>Printer does not detect blackmark.This status only can be available when printer blackmark is turn on</summary>
+</member><member name="F:ISA.Utility.Device.Printer.Device.Masung.SDK.PrinterStatus.NoPaper">
+	<summary>Paper out</summary>
+</member><member name="F:ISA.Utility.Device.Printer.Device.Masung.SDK.PrinterStatus.LowPaper">
+	<summary>Paper low</summary>
+</member><member name="F:ISA.Utility.Device.Printer.Device.Masung.SDK.PrinterStatus.Unknown">
+	<summary>Unknown</summary>
+</member><member name="T:ISA.Utility.Device.Printer.Device.Masung.SDK.PrinterStatus">
+	<summary>Printer status return info</summary>
+</member><member name="M:ISA.Utility.Device.Printer.Device.Masung.SDK.MasungSDK.SetPrintport(System.Text.StringBuilder,System.Int32)">
+	<summary>
+ Setup printer connection mode,name and serial interface baud rate.
+ </summary>
+	<param name="strPort">Printer communication interface name is generally USB00X or COMX(X stand for number 1, 2, 3)</param>
+	<param name="iBaudrate">Serial baud rate</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:ISA.Utility.Device.Bill.Dispenser.Manager.CoreFunction.IBillDispenser">
+	<summary>
+ Base class for coin acceptor.
+ </summary>
+	<remarks>
+ DO NOT MODIFY!
+ Use implements whenever new device is added
+ </remarks>
+</member><member name="M:ISA.Utility.Device.Bill.Acceptor.Manager.ManagerClass.Instance">
+	<summary>
+ Access the instance of Manager Class.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:ISA.Utility.Device.CommonLib.CashCodeSerialConnector.Commands.CoinAcceptor.ReadCreditBuffer(System.Byte)">
+	<summary>
+ Get the latest buffer containing the event number, Latest inserted coin, and 4 previously inserted coins
+ </summary>
+	<returns></returns>
+	<remarks>
+ Data from coin acceptor contains 11 byte structured as:
+ Event Counter = Byte(0)
+ 
+ Coin info contains 2 byte each
+ 1st byte &gt; Contains the cointype. Zero(0) means error
+ 2nd byte &gt; Contains the coin sorting channel. Contains ErrorCode if 1st byte is Zero(0)
+ 
+ Latest info and buffered info is shifted after each event
+ 
+ Latest info = Byte(1) Byte(2)
+ Buffer1 = Byte(3) Byte(4)
+ Buffer2 = Byte(5) Byte(6)
+ Buffer3 = Byte(7) Byte(8)
+ Buffer4 = Byte(9) Byte(10)
+ </remarks>
+</member><member name="T:ISA.Utility.Device.CommonLib.CashCodeSerialConnector.Commands.CoinAcceptor">
+	<summary>
+ Library for G13 Coin Acceptor.
+ </summary>
+	<remarks>
+ Do not edit unless needed.
+ </remarks>
+</member><member name="F:ISA.Utility.Data.DatabaseManager.Configuration.ipAddress">
+	<summary>
+ IP address of the database server.
+ </summary>
+</member><member name="F:ISA.Utility.Data.DatabaseManager.Configuration.port">
+	<summary>
+ Port number for the database connection.
+ </summary>
+</member><member name="F:ISA.Utility.Data.DatabaseManager.Configuration.username">
+	<summary>
+ Username for authenticating the database connection.
+ </summary>
+</member><member name="F:ISA.Utility.Data.DatabaseManager.Configuration.password">
+	<summary>
+ Password for authenticating the database connection.
+ </summary>
+</member><member name="F:ISA.Utility.Data.DatabaseManager.Configuration.databaseName">
+	<summary>
+ Name of the database.
+ </summary>
+</member><member name="F:ISA.Utility.Data.DatabaseManager.Configuration.driver">
+	<summary>
+ Database driver information.
+ </summary>
+</member><member name="F:ISA.Utility.Data.DatabaseManager.Configuration.isOk">
+	<summary>
+ Indicates whether the database connection configuration is valid.
+ </summary>
+</member><member name="T:ISA.Utility.Data.DatabaseManager.Configuration">
+	<summary>
+ Represents the configuration details for a database connection.
+ </summary>
+</member><member name="F:ISA.Utility.Data.DatabaseManager._connection">
+	<summary>
+ ADODB database connection.
+ </summary>
+</member><member name="P:ISA.Utility.Data.DatabaseManager.Status">
+	<summary>
+ Get status of connection
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:ISA.Utility.Data.DatabaseManager.ConfigInfo">
+	<summary>
+ Get database configuration.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:ISA.Utility.Data.DatabaseManager.#ctor(ISA.Utility.Data.DatabaseManager.Configuration,System.Boolean)">
+	<summary>
+ Create new ADODB Database connection
+ </summary>
+	<param name="databaseConfig">Database configuration to use.</param>
+	<param name="excludeDatabase">Exclude database to perform system queries. Default value is false.</param>
+	<remarks></remarks>
+</member><member name="M:ISA.Utility.Data.DatabaseManager.ExecuteQuery(System.String)">
+	<summary>
+ Execute SQL query and return datatable if possible.
+ </summary>
+	<param name="query"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:ISA.Utility.Data.DatabaseManager.Connect(System.Boolean)">
+	<summary>
+ Connect to database
+ </summary>
+	<param name="excludeDatabase">Exclude database to perform system queries. Default value is false.</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:ISA.Utility.Data.DatabaseManager">
+	<summary>
+ Database connetion class using ado.net(adodb) and implementing of disposable interface. Can be used in 'Using' code block.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:ISA.Utility.Device.Bill.Acceptor.Manager.CoreFunction.IBillAcceptor">
+	<summary>
+ Base class for bill acceptor.
+ </summary>
+	<remarks>
+ DO NOT MODIFY!
+ Use implements whenever new device is added
+ </remarks>
+</member><member name="M:ISA.Utility.Device.Printer.Manager.CoreFunction.CommonFunctions.SplitString(System.String,System.Int32)">
+	<summary>
+ Cut string depending on length specified.
+ </summary>
+	<param name="msg"></param>
+	<param name="length"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:ISA.Utility.UI.TitleBar.TitleText">
+	<summary>
+ Set or get header's title text
+ </summary>
+	<value>Title text</value>
+	<returns>Title text</returns>
+	<remarks></remarks>
+</member><member name="M:ISA.Utility.UI.TitleBar.Header_MouseDown(System.Object,System.Windows.Forms.MouseEventArgs)">
+	<summary>MouseDown event to Get the x/y position to add onto the main form and inform that the form is being Dragged</summary>
+</member><member name="M:ISA.Utility.UI.TitleBar.Header_MouseUp(System.Object,System.Windows.Forms.MouseEventArgs)">
+	<summary>MouseUp event to inform that the form is stopped being Dragged</summary>
+</member><member name="M:ISA.Utility.UI.TitleBar.Header_MouseMove(System.Object,System.Windows.Forms.MouseEventArgs)">
+	<summary>Set the new location of form </summary>
+</member>
+</members>
+</doc>

@@ -1,0 +1,62 @@
+[08:09:34][WARNING]	[9][CheckFilesIfExisting|Helper]: File not found in folder (C:\Users\Joven\Documents\Joven\ReadWriteD8\D8readwrite\D8readwrite\bin\x86\Debug): adodb.dll
+[08:23:46][WARNING]	[9][CheckFilesIfExisting|Helper]: File not found in folder (C:\Users\Joven\Documents\Joven\ReadWriteD8\D8readwrite\D8readwrite\bin\x86\Debug): adodb.dll
+[08:42:46][WARNING]	[10][CheckFilesIfExisting|Helper]: File not found in folder (C:\Users\Joven\Documents\Joven\ReadWriteD8\D8readwrite\D8readwrite\bin\x86\Debug): adodb.dll
+[08:49:33][WARNING]	[9][CheckFilesIfExisting|Helper]: File not found in folder (C:\Users\Joven\Documents\Joven\ReadWriteD8\D8readwrite\D8readwrite\bin\x86\Debug): adodb.dll
+[08:52:23][WARNING]	[10][CheckFilesIfExisting|Helper]: File not found in folder (C:\Users\Joven\Documents\Joven\ReadWriteD8\D8readwrite\D8readwrite\bin\x86\Debug): adodb.dll
+[08:53:54][WARNING]	[10][CheckFilesIfExisting|Helper]: File not found in folder (C:\Users\Joven\Documents\Joven\ReadWriteD8\D8readwrite\D8readwrite\bin\x86\Debug): adodb.dll
+[08:57:11][DEBUG]	[10][Connect|DatabaseManager]: Database connected: Driver={MySQL ODBC 8.0 Unicode Driver};Server=127.0.0.1;Port=3306;UID=root;PWD=1sa]Inc]PMSroot.db;Database=dbase;
+[08:57:11][ERROR]	[10][ExecuteQuery|DatabaseManager]: Query failed: INSERT INTO sector3 (siteid, entryid, vehicleid, timein, plateno) VALUES('1','3','2','1719633906','1719633906','nnsdnv',')
+	Error	: [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.23]You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '')' at line 1
+	S.Trace	: System.Runtime.InteropServices.COMException (0x80040E14): [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.23]You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '')' at line 1
+   at ADODB.ConnectionClass.Execute(String CommandText, Object& RecordsAffected, Int32 Options)
+   at ISA.Utility.Data.DatabaseManager.ExecuteQuery(String query) in C:\Users\Joven\Downloads\isa.utility-master\ISA.Utility\Data\DatabaseManager.vb:line 135
+[08:57:26][DEBUG]	[10][Connect|DatabaseManager]: Database connected: Driver={MySQL ODBC 8.0 Unicode Driver};Server=127.0.0.1;Port=3306;UID=root;PWD=1sa]Inc]PMSroot.db;Database=dbase;
+[08:57:26][ERROR]	[10][ExecuteQuery|DatabaseManager]: Query failed: INSERT INTO sector3 (siteid, entryid, vehicleid, timein, plateno) VALUES('1','3','2','1719633906','1719633906','nnsdnv',')
+	Error	: [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.23]You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '')' at line 1
+	S.Trace	: System.Runtime.InteropServices.COMException (0x80040E14): [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.23]You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '')' at line 1
+   at ADODB.ConnectionClass.Execute(String CommandText, Object& RecordsAffected, Int32 Options)
+   at ISA.Utility.Data.DatabaseManager.ExecuteQuery(String query) in C:\Users\Joven\Downloads\isa.utility-master\ISA.Utility\Data\DatabaseManager.vb:line 135
+[09:00:21][DEBUG]	[9][Connect|DatabaseManager]: Database connected: Driver={MySQL ODBC 8.0 Unicode Driver};Server=127.0.0.1;Port=3306;UID=root;PWD=1sa]Inc]PMSroot.db;Database=dbase;
+[09:00:21][ERROR]	[9][ExecuteQuery|DatabaseManager]: Query failed: INSERT INTO dbase.sector3 (siteid, entryid, vehicleid, timein, plateno) VALUES('1','3','2','1719633906','1719633906','nnsdnv',')
+	Error	: [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.23]You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '')' at line 1
+	S.Trace	: System.Runtime.InteropServices.COMException (0x80040E14): [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.23]You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '')' at line 1
+   at ADODB.ConnectionClass.Execute(String CommandText, Object& RecordsAffected, Int32 Options)
+   at ISA.Utility.Data.DatabaseManager.ExecuteQuery(String query) in C:\Users\Joven\Downloads\isa.utility-master\ISA.Utility\Data\DatabaseManager.vb:line 135
+[09:01:55][DEBUG]	[9][Connect|DatabaseManager]: Database connected: Driver={MySQL ODBC 8.0 Unicode Driver};Server=127.0.0.1;Port=3306;UID=root;PWD=1sa]Inc]PMSroot.db;Database=dbase;
+[09:08:21][DEBUG]	[10][Connect|DatabaseManager]: Database connected: Driver={MySQL ODBC 8.0 Unicode Driver};Server=127.0.0.1;Port=3306;UID=root;PWD=1sa]Inc]PMSroot.db;Database=dbase;
+[09:10:27][DEBUG]	[9][Connect|DatabaseManager]: Database connected: Driver={MySQL ODBC 8.0 Unicode Driver};Server=127.0.0.1;Port=3306;UID=root;PWD=1sa]Inc]PMSroot.db;Database=dbase;
+[09:10:27][INFO]	[9][ExecuteQuery|DatabaseManager]: ExecuteQuery: Connection is closed
+[09:13:58][DEBUG]	[10][Connect|DatabaseManager]: Database connected: Driver={MySQL ODBC 8.0 Unicode Driver};Server=127.0.0.1;Port=3306;UID=root;PWD=1sa]Inc]PMSroot.db;Database=dbase;
+[09:13:58][INFO]	[10][ExecuteQuery|DatabaseManager]: ExecuteQuery: Connection is closed
+[09:23:32][DEBUG]	[9][Connect|DatabaseManager]: Database connected: Driver={MySQL ODBC 8.0 Unicode Driver};Server=127.0.0.1;Port=3306;UID=root;PWD=1sa]Inc]PMSroot.db;Database=dbase;
+[09:23:32][INFO]	[9][ExecuteQuery|DatabaseManager]: ExecuteQuery: Connection is closed
+[10:00:09][DEBUG]	[9][Connect|DatabaseManager]: Database connected: Driver={MySQL ODBC 8.0 Unicode Driver};Server=127.0.0.1;Port=3306;UID=root;PWD=1sa]Inc]PMSroot.db;Database=dbase;
+[10:00:09][ERROR]	[9][ExecuteQuery|DatabaseManager]: Query failed: INSERT INTO dbase.sector4 (siteid, posid, xgrace, transtime, crid) VALUES ('1','3','15','1719634121','Car')
+	Error	: [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.23]Incorrect integer value: 'Car' for column 'crid' at row 1
+	S.Trace	: System.Runtime.InteropServices.COMException (0x80004005): [MySQL][ODBC 8.0(w) Driver][mysqld-8.0.23]Incorrect integer value: 'Car' for column 'crid' at row 1
+   at ADODB.ConnectionClass.Execute(String CommandText, Object& RecordsAffected, Int32 Options)
+   at ISA.Utility.Data.DatabaseManager.ExecuteQuery(String query) in C:\Users\Joven\Downloads\isa.utility-master\ISA.Utility\Data\DatabaseManager.vb:line 135
+[10:11:31][DEBUG]	[9][Connect|DatabaseManager]: Database connected: Driver={MySQL ODBC 8.0 Unicode Driver};Server=127.0.0.1;Port=3306;UID=root;PWD=1sa]Inc]PMSroot.db;Database=dbase;
+[10:11:31][INFO]	[9][ExecuteQuery|DatabaseManager]: ExecuteQuery: Connection is closed
+[10:26:13][DEBUG]	[9][Connect|DatabaseManager]: Database connected: Driver={MySQL ODBC 8.0 Unicode Driver};Server=127.0.0.1;Port=3306;UID=root;PWD=1sa]Inc]PMSroot.db;Database=dbase;
+[10:26:13][INFO]	[9][ExecuteQuery|DatabaseManager]: ExecuteQuery: Connection is closed
+[10:26:15][DEBUG]	[9][Connect|DatabaseManager]: Database connected: Driver={MySQL ODBC 8.0 Unicode Driver};Server=127.0.0.1;Port=3306;UID=root;PWD=1sa]Inc]PMSroot.db;Database=dbase;
+[10:26:15][INFO]	[9][ExecuteQuery|DatabaseManager]: ExecuteQuery: Connection is closed
+[10:40:04][DEBUG]	[9][Connect|DatabaseManager]: Database connected: Driver={MySQL ODBC 8.0 Unicode Driver};Server=127.0.0.1;Port=3306;UID=root;PWD=1sa]Inc]PMSroot.db;Database=dbase;
+[10:40:04][INFO]	[9][ExecuteQuery|DatabaseManager]: ExecuteQuery: Connection is closed
+[10:42:27][DEBUG]	[9][Connect|DatabaseManager]: Database connected: Driver={MySQL ODBC 8.0 Unicode Driver};Server=127.0.0.1;Port=3306;UID=root;PWD=1sa]Inc]PMSroot.db;Database=dbase;
+[10:42:27][INFO]	[9][ExecuteQuery|DatabaseManager]: ExecuteQuery: Connection is closed
+[10:42:29][DEBUG]	[9][Connect|DatabaseManager]: Database connected: Driver={MySQL ODBC 8.0 Unicode Driver};Server=127.0.0.1;Port=3306;UID=root;PWD=1sa]Inc]PMSroot.db;Database=dbase;
+[10:42:29][INFO]	[9][ExecuteQuery|DatabaseManager]: ExecuteQuery: Connection is closed
+[14:21:22][DEBUG]	[10][Connect|DatabaseManager]: Database connected: Driver={MySQL ODBC 8.0 Unicode Driver};Server=127.0.0.1;Port=3306;UID=root;PWD=1sa]Inc]PMSroot.db;Database=dbase;
+[14:21:22][INFO]	[10][ExecuteQuery|DatabaseManager]: ExecuteQuery: Connection is closed
+[14:21:25][DEBUG]	[10][Connect|DatabaseManager]: Database connected: Driver={MySQL ODBC 8.0 Unicode Driver};Server=127.0.0.1;Port=3306;UID=root;PWD=1sa]Inc]PMSroot.db;Database=dbase;
+[14:21:25][INFO]	[10][ExecuteQuery|DatabaseManager]: ExecuteQuery: Connection is closed
+[15:40:37][DEBUG]	[10][Connect|DatabaseManager]: Database connected: Driver={MySQL ODBC 8.0 Unicode Driver};Server=127.0.0.1;Port=3306;UID=root;PWD=1sa]Inc]PMSroot.db;Database=dbase;
+[15:40:37][INFO]	[10][ExecuteQuery|DatabaseManager]: ExecuteQuery: Connection is closed
+[15:40:40][DEBUG]	[10][Connect|DatabaseManager]: Database connected: Driver={MySQL ODBC 8.0 Unicode Driver};Server=127.0.0.1;Port=3306;UID=root;PWD=1sa]Inc]PMSroot.db;Database=dbase;
+[15:40:40][INFO]	[10][ExecuteQuery|DatabaseManager]: ExecuteQuery: Connection is closed
+[16:08:35][DEBUG]	[9][Connect|DatabaseManager]: Database connected: Driver={MySQL ODBC 8.0 Unicode Driver};Server=127.0.0.1;Port=3306;UID=root;PWD=1sa]Inc]PMSroot.db;Database=dbase;
+[16:08:35][INFO]	[9][ExecuteQuery|DatabaseManager]: ExecuteQuery: Connection is closed
+[16:08:37][DEBUG]	[9][Connect|DatabaseManager]: Database connected: Driver={MySQL ODBC 8.0 Unicode Driver};Server=127.0.0.1;Port=3306;UID=root;PWD=1sa]Inc]PMSroot.db;Database=dbase;
+[16:08:38][INFO]	[9][ExecuteQuery|DatabaseManager]: ExecuteQuery: Connection is closed

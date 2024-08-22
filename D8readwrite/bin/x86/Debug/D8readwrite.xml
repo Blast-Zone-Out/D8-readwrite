@@ -1,0 +1,115 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+D8readwrite
+</name>
+</assembly>
+<members>
+<member name="M:D8readwrite.TimeConversion.unixTimeStamp.LocalToUnixTimestamp(System.DateTime)">
+	<summary>
+ Converts a (Local)DateTime object to a Unix timestamp 
+ </summary>
+	<param name="dateTime"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:D8readwrite.TimeConversion.unixTimeStamp.LocalFromUnixTimestamp(System.Int64)">
+	<summary>
+ Converts a Unix timestamp to a (Local)DateTime object
+ </summary>
+	<param name="unixTimestamp"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="F:D8readwrite.D8Reader._port">
+	<summary>
+ The port name for the D8 reader.
+ </summary>
+</member><member name="F:D8readwrite.D8Reader._baudRate">
+	<summary>
+ The baud rate for the D8 reader.
+ </summary>
+</member><member name="F:D8readwrite.D8Reader._d8Reader">
+	<summary>
+ The D8 reader class.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:D8readwrite.D8Reader.ConfigInfo.PortName">
+	<summary>D8 port</summary>
+</member><member name="F:D8readwrite.D8Reader.ConfigInfo.BaudRate">
+	<summary>D8 BaudRate</summary>
+</member><member name="F:D8readwrite.D8Reader.ConfigInfo.Enabled">
+	<summary>Check if D8 is enabled</summary>
+</member><member name="T:D8readwrite.D8Reader.ConfigInfo">
+	<summary>D8 settings</summary>
+</member><member name="M:D8readwrite.D8Reader.#ctor(D8readwrite.D8Reader.ConfigInfo)">
+	<summary>
+ Initializes a new instance of the <see cref="T:D8readwrite.D8Reader"/> class.
+ </summary>
+	<param name="newConfig">Configuration of D8.</param>
+</member><member name="M:D8readwrite.D8Reader.Connect">
+	<summary>
+ Connects to the D8 reader.
+ </summary>
+	<returns><c>true</c> if the connection is successful; otherwise, <c>false</c>.</returns>
+</member><member name="M:D8readwrite.D8Reader.Disconnect">
+	<summary>
+ Disconnects to the D8 reader.
+ </summary>
+	<returns><c>true</c> if the disconnect is successful; otherwise, <c>false</c>.</returns>
+</member><member name="M:D8readwrite.D8Reader.GetCardCode(System.Boolean)">
+	<summary>
+ Gets the card code.
+ </summary>
+	<returns>The card code.</returns>
+</member><member name="M:D8readwrite.D8Reader.Read(System.Int32)">
+	<summary>
+ Reads data from the specified sector.
+ </summary>
+	<param name="sector">The sector number.</param>
+	<returns>The read sector data.</returns>
+</member><member name="M:D8readwrite.D8Reader.Write(System.Int32,System.String)">
+	<summary>
+ Writes data to the specified sector.
+ </summary>
+	<param name="sector">The sector number.</param>
+	<param name="data">The sector data.</param>
+	<returns><c>true</c> if the write operation is successful; otherwise, <c>false</c>.</returns>
+</member><member name="M:D8readwrite.D8Reader.ClearSector(System.Int32)">
+	<summary>
+ Clears the card data for the specified sectors.
+ </summary>
+	<param name="sector">The sectors to clear.</param>
+</member><member name="M:D8readwrite.D8Reader.Beep(System.Int32)">
+	<summary>
+ Triggers a beep sound.
+ </summary>
+	<param name="ms">Lenght of sound in MS</param>
+	<remarks></remarks>
+</member><member name="M:D8readwrite.D8Reader.LoadKey(System.Int16)">
+	<summary>
+  Load card password into the D8 reader.
+ </summary>
+	<returns><c>true</c> if the authentication is successful; otherwise, <c>false</c>.</returns>
+</member><member name="M:D8readwrite.D8Reader.Authenticate(System.Int16)">
+	<summary>
+ Authenticates the D8 reader.
+ </summary>
+	<returns><c>true</c> if the authentication is successful; otherwise, <c>false</c>.</returns>
+</member><member name="M:D8readwrite.D8Reader.ReadBlock(System.Int16)">
+	<summary>
+ Read a block of Mifare card.
+ </summary>
+	<returns><c>true</c> if the authentication is successful; otherwise, <c>false</c>.</returns>
+</member><member name="M:D8readwrite.D8Reader.StringToHexString(System.String)">
+	<summary>
+ Converts a string into its hexadecimal representation based on ASCII values.
+ </summary>
+	<param name="data">The input string to convert.</param>
+	<returns>A string representing the hexadecimal representation of the input string.</returns>
+</member><member name="T:D8readwrite.D8Reader">
+	<summary>
+ Represents a D8 reader for handling card operations.
+ </summary>
+</member>
+</members>
+</doc>

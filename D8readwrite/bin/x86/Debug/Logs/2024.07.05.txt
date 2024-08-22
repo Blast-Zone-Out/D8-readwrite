@@ -1,0 +1,7 @@
+[15:55:12][WARNING]	[9][CheckFilesIfExisting|Helper]: File not found in folder (C:\Users\Joven\Documents\Joven\ReadWriteD8\D8readwrite\D8readwrite\bin\x86\Debug): adodb.dll
+[15:55:15][WARNING]	[9][CheckFilesIfExisting|Helper]: File not found in folder (C:\Users\Joven\Documents\Joven\ReadWriteD8\D8readwrite\D8readwrite\bin\x86\Debug): adodb.dll
+[15:57:05][WARNING]	[9][CheckFilesIfExisting|Helper]: File not found in folder (C:\Users\Joven\Documents\Joven\ReadWriteD8\D8readwrite\D8readwrite\bin\x86\Debug): adodb.dll
+[16:07:30][WARNING]	[9][CheckFilesIfExisting|Helper]: File not found in folder (C:\Users\Joven\Documents\Joven\ReadWriteD8\D8readwrite\D8readwrite\bin\x86\Debug): adodb.dll
+[16:11:26][WARNING]	[10][CheckFilesIfExisting|Helper]: File not found in folder (C:\Users\Joven\Documents\Joven\ReadWriteD8\D8readwrite\D8readwrite\bin\x86\Debug): adodb.dll
+[16:13:50][WARNING]	[10][CheckFilesIfExisting|Helper]: File not found in folder (C:\Users\Joven\Documents\Joven\ReadWriteD8\D8readwrite\D8readwrite\bin\x86\Debug): adodb.dll
+[16:14:44][WARNING]	[9][CheckFilesIfExisting|Helper]: File not found in folder (C:\Users\Joven\Documents\Joven\ReadWriteD8\D8readwrite\D8readwrite\bin\x86\Debug): adodb.dll

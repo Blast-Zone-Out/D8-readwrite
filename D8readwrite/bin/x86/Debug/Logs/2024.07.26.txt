@@ -1,0 +1,5 @@
+[08:41:41][ERROR]	[9][Connect|DatabaseManager]: Database connection failed
+	Error	: [MySQL][ODBC 8.0(w) Driver]Access denied for user 'root--'@'localhost' (using password: YES)
+	S.Trace	: System.Runtime.InteropServices.COMException (0x80004005): [MySQL][ODBC 8.0(w) Driver]Access denied for user 'root--'@'localhost' (using password: YES)
+   at ADODB.ConnectionClass.Open(String ConnectionString, String UserID, String Password, Int32 Options)
+   at ISA.Utility.Data.DatabaseManager.Connect(Boolean excludeDatabase) in C:\Users\Joven\Downloads\isa.utility-master\ISA.Utility\Data\DatabaseManager.vb:line 189

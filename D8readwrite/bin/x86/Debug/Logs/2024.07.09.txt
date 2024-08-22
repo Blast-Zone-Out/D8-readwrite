@@ -1,0 +1,6 @@
+[09:18:57][DEBUG]	[9][Connect|DatabaseManager]: Database connected: Driver={MySQL ODBC 8.0 Unicode Driver};Server=127.0.0.1;Port=3306;UID=root;PWD=1sa]Inc]PMSroot.db;Database=dbase;
+[09:18:57][INFO]	[9][ExecuteQuery|DatabaseManager]: ExecuteQuery: Connection is closed
+[09:18:59][DEBUG]	[9][Connect|DatabaseManager]: Database connected: Driver={MySQL ODBC 8.0 Unicode Driver};Server=127.0.0.1;Port=3306;UID=root;PWD=1sa]Inc]PMSroot.db;Database=dbase;
+[09:18:59][INFO]	[9][ExecuteQuery|DatabaseManager]: ExecuteQuery: Connection is closed
+[13:58:32][DEBUG]	[10][Connect|DatabaseManager]: Database connected: Driver={MySQL ODBC 8.0 Unicode Driver};Server=127.0.0.1;Port=3306;UID=root;PWD=1sa]Inc]PMSroot.db;Database=dbase;
+[13:58:32][INFO]	[10][ExecuteQuery|DatabaseManager]: ExecuteQuery: Connection is closed
